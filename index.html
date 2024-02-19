@@ -8,17 +8,14 @@
   <link rel="icon" type="image/x-icon" href="https://i.ibb.co/nrbq08Y/icons8-s-key-48.png">
 </head>
 
-<body>
+<body style="margin:0px;padding:0px;overflow:hidden">
+  <script>
+    const iframeSrc = `${process.env.ARCHINARY}`; // Accessing environment variable
 
-  <body style="margin:0px;padding:0px;overflow:hidden">
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbwFtE5ud-UpEowmlK6i885pXndrkpiLILmHVHCYS8R1ANlO3OtgbaS_OWMKj-Gpio2Z2A/exec"
-      frameborder="0"
-      style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px"
-      height="100%" width="100%"></iframe>
-  </body>
-
-
+    // Use iframeSrc as the value for the src attribute
+    document.write(`<iframe src="${iframeSrc}" frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>`);
+  </script>
 </body>
+
 
 </html>
